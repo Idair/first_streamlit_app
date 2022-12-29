@@ -24,3 +24,6 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the selected fruits table on the page.
 streamlit.dataframe(fruits_to_show)
+
+
+#https://docs.google.com/spreadsheets/d/1hLBv0pO1qpeMtUncE8Yv1NSdqaDrY9CqmXoP5b9313s/edit?resourcekey#gid=663712744
