@@ -56,6 +56,6 @@ my_cur = my_cnx.cursor()
 #streamlit.text(my_data_row)
 
 my_cur.execute("select * from fruit_load_list")
-my_data_row = my_cur.fetchone()
-streamlit.text("Fruit Load List Contains:")
-streamlit.text(my_data_row)
+my_data_rows = my_cur.fetchall()  #Fetch all rows not just one
+streamlit.header("Fruit Load List Contains:")
+streamlit.dataframe(my_data_rows)
