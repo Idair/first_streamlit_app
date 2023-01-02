@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-
+import snowflake.connector
 
 # https://idair-first-streamlit-app-streamlit-app-l8ibwu.streamlit.app/
 
