@@ -1,5 +1,8 @@
 import streamlit
 import pandas
+import requests
+
+
 # https://idair-first-streamlit-app-streamlit-app-l8ibwu.streamlit.app/
 
 streamlit.title("My Mom's New Healthy Diner")
@@ -25,5 +28,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the selected fruits table on the page.
 streamlit.dataframe(fruits_to_show)
 
+#API Call
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
 
 #https://docs.google.com/spreadsheets/d/1hLBv0pO1qpeMtUncE8Yv1NSdqaDrY9CqmXoP5b9313s/edit?resourcekey#gid=663712744
